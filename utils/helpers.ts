@@ -12,6 +12,21 @@ export const getURL = () => {
   return url;
 };
 
+export const getIds = async () => {
+  const res: Response = await fetch('/api/get-bought-products', {
+    method: 'GET',
+    headers: new Headers({ 'Content-Type': 'application/json' }),
+    credentials: 'same-origin'
+  });
+
+  if (!res.ok) {
+    console.error('Error in getIds', { res });
+    throw Error(res.statusText);
+  }
+
+  return res.json();
+}
+
 export const postData = async ({
   url,
   data

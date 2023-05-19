@@ -108,7 +108,7 @@ export default function Account({ user }: { user: User }) {
               <Button
                 variant="slim"
                 loading={loading}
-                disabled={loading || !subscription}
+                disabled={loading}
                 onClick={redirectToCustomerPortal}
               >
                 Open customer portal

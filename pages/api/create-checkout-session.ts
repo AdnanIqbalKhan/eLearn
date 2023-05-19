@@ -30,12 +30,7 @@ const CreateCheckoutSession: NextApiHandler = async (req, res) => {
             quantity
           }
         ],
-        mode: 'subscription',
-        allow_promotion_codes: true,
-        subscription_data: {
-          trial_from_plan: true,
-          metadata
-        },
+        mode: 'payment',
         success_url: `${getURL()}/account`,
         cancel_url: `${getURL()}/`
       });
