@@ -30,7 +30,7 @@ const SignIn = () => {
             <Auth
               supabaseClient={supabaseClient}
               providers={['github']}
-              redirectTo={getURL()}
+              redirectTo={window.location.origin}
               magicLink={true}
               appearance={{
                 theme: ThemeSupa,
