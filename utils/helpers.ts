@@ -9,9 +9,9 @@ export const getURL = () => {
   url = url.includes('http') ? url : `https://${url}`;
   // Make sure to including trailing `/`.
   url = url.charAt(url.length - 1) === '/' ? url : `${url}/`;
-  console .log("1111",url)
-  console.log("222",process.env.NEXT_PUBLIC_SITE_URL)
-console .log("333",process.env.NEXT_PUBLIC_VERCEL_URL)
+  alert("1111",url)
+  aler("222",process.env.NEXT_PUBLIC_SITE_URL)
+alertt("333",process.env.NEXT_PUBLIC_VERCEL_URL)
   return url;
 };
 
