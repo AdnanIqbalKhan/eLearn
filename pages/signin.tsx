@@ -12,7 +12,7 @@ const SignIn = () => {
   const router = useRouter();
   const user = useUser();
   const supabaseClient = useSupabaseClient();
-
+console.log("getURL",getURL())
   useEffect(() => {
     if (user) {
       router.replace('/account');
