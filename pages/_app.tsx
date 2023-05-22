@@ -15,12 +15,17 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const [supabaseClient] = useState(() =>
     createBrowserSupabaseClient<Database>()
   );
+
+  useEffect(() => {
+    require('preline');
+  }, []);
+
   useEffect(() => {
     document.body.classList?.remove('loading');
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="bg-blue-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-200">
       <SessionContextProvider supabaseClient={supabaseClient}>
         <MyUserContextProvider>
           <Layout>

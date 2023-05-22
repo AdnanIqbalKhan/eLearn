@@ -22,9 +22,15 @@ dependencies:
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
+  clsx:
+    specifier: ^1.2.1
+    version: 1.2.1
   next:
     specifier: ^13.2.3
     version: 13.2.3(react-dom@18.2.0)(react@18.2.0)
+  preline:
+    specifier: ^1.8.0
+    version: 1.8.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -209,6 +215,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: false
+
+  /@popperjs/core@2.11.7:
+    resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
     dev: false
 
   /@stitches/core@1.2.8:
@@ -478,6 +488,11 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /cmd-shim@6.0.1:
@@ -1003,6 +1018,12 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /preline@1.8.0:
+    resolution: {integrity: sha512-guttn86Fc/+AbvN9oKcr2z3zU7DL3Q5dl7nhcR4nTi5F02LXQc7WIYwgIXMR97kymCs52feiju6glXO3dUIpvA==}
+    dependencies:
+      '@popperjs/core': 2.11.7
+    dev: false
 
   /prettier@2.8.4:
     resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
